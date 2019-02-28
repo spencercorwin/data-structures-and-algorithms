@@ -1,0 +1,16 @@
+{
+  "name": "hash-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hash-map.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node": "^11.10.0",
+    "string-hash": "^1.1.3"
+  }
+}
