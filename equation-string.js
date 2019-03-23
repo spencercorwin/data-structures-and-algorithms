@@ -136,6 +136,9 @@ const generateEval = (numStr, target) => {
 
 //generateEval('234', 27);
 //generateEval('32', 5);
-generateEval('232', 12);
+//generateEval('232', 12);
 //generateEval('3232', 15);
 //generateEval('19238', 13);
+//generateEval('314159265358', 27182);
+// 3141 * 5 / 9 * 26 / 5 * 3 - 5 * 8 = 27182
+// 3 + 1 - 415 * 92 + 65358 = 27182
