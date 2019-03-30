@@ -89,7 +89,7 @@ class BinaryHeap {
 
         while (n > 0) {
             // Get the parent element's position index, then fetch the value
-            const parentOfNPosition = (Math.floor((n + 1) / 2) -1);
+            const parentOfNPosition = (Math.floor((n + 1) / 2) - 1);
             const parentObj = this.content[parentOfNPosition];
 
             // If the parent has a lower score things are ordered and we're done
