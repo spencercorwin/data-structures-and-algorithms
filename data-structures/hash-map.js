@@ -1,4 +1,3 @@
-"use strict";
 
 //Module converts a string to a numberic hash
 const hash = require('string-hash');

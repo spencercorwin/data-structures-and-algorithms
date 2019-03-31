@@ -26,6 +26,7 @@ class HashWithChaining {
                 return array[i];
             }
         }
+        return null;
     }
 
     set(key, value) {
