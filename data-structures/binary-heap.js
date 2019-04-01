@@ -1,4 +1,4 @@
-'use strict';
+
 // Binary Heap is a way to store a collection of objects in a way that the smallest
 // element can be found quickly. Finding smallest item in plain JS array takes too long.
 // Arrays can be sorted easily with sort() method but takes too long O(n).
@@ -15,7 +15,7 @@
 class BinaryHeap {
     // The score function is used to compare elements in the heap. This makes it
     // possible to store objects that cannot be directly compared
-    constructor(scoreFunction) {
+    constructor(scoreFunction = x => x) {
         this.content = [];
         this.scoreFunction = scoreFunction;
     }
@@ -163,15 +163,15 @@ class BinaryHeap {
 
 }
 
-const testHeap = new BinaryHeap(x => x);
+const heap = new BinaryHeap();
 
-// Insert new elements into the testHeap in random order
-[10, 3, 4, 8, 2, 9, 7, 1, 2, 6, 5].forEach(elem => testHeap.push(elem));
+// Insert new elements into the heap in random order
+[10, 3, 4, 8, 2, 9, 7, 1, 2, 6, 5].forEach(elem => heap.push(elem));
 
 // Remove an element
-testHeap.remove(2);
+heap.remove(2);
 
 // Test to see if the heap is still ordered as it should be
-while (testHeap.size() > 0) {
-    console.log(testHeap.pop());
+while (heap.size() > 0) {
+    console.log(heap.pop());
 }

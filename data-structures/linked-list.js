@@ -3,31 +3,6 @@
 // symbolized with a boxed X or circle with line through it
 // Each link is called a node. The head points to the first node in the list
 // https://codeburst.io/js-data-structures-linked-list-3ed4d63e6571
-//                Linked List        Array
-
-//Insert at        O(1)               O(n)
-//beginning
-
-//Remove from      O(1)               O(n)
-//beginning
-
-//Insert           O(1), O(n) *       O(1)
-//at end
-
-//Remove           O(1), O(n)         O(1)
-//from end
-
-//Insert           O(1), O(n) *       O(n)
-//in middle        
-
-//Remove from      O(n), O(n)         O(n)
-//middle
-
-//Find / Get       O(n)               O(1)
-//item at index
-
-//Wasted           O(n)               0
-//Space
 
 class LinkedList {
     constructor(...values) {
